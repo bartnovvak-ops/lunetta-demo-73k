@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ćwiczeniowy projekt strony dla Trattoria Pergamin Nullo w Krakowie.">
+  <title>Trattoria Pergamin Nullo — projekt ćwiczeniowy</title>
+  <style>
+    :root { --cream:#f5f0e7; --ink:#29251f; --olive:#5e6548; --rust:#a64e32; --line:#d8cdbd; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial,sans-serif; }
+    .demo { padding:10px 20px; text-align:center; background:#29251f; color:white; font-size:13px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:22px 7%; border-bottom:1px solid var(--line); }
+    .brand { font: bold 25px Georgia,serif; letter-spacing:.3px; }
+    nav { display:flex; gap:24px; }
+    nav a { color:var(--ink); text-decoration:none; font-size:14px; }
+    .hero { display:grid; grid-template-columns:1fr 1fr; min-height:610px; align-items:center; gap:48px; padding:65px 7%; }
+    .eyebrow { color:var(--rust); text-transform:uppercase; letter-spacing:3px; font-size:12px; }
+    h1,h2,h3 { font-family:Georgia,serif; font-weight:normal; }
+    h1 { font-size:clamp(48px,6vw,76px); line-height:1; margin:18px 0; }
+    .hero p { color:#625c52; line-height:1.8; max-width:440px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:25px; }
+    .btn { display:inline-block; background:var(--olive); color:white; padding:14px 20px; text-decoration:none; }
+    .btn.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .hero-photo { min-height:430px; background:linear-gradient(0deg,#211b18aa,transparent 55%),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85') center/cover; display:flex; align-items:end; padding:24px; color:white; font:22px Georgia,serif; }
+    section { padding:74px 7%; }
+    .section-title { max-width:700px; }
+    h2 { font-size:42px; margin:12px 0; }
+    .section-intro { color:#625c52; line-height:1.7; }
+    .menu-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:30px; }
+    .menu-category { margin-top:50px; } .menu-category h3 { font-size:30px; border-bottom:1px solid var(--line); padding-bottom:12px; } .dish-top { font-size:19px; }
+    .dish { border-top:1px solid var(--line); padding:18px 0; }
+    .dish-top { display:flex; justify-content:space-between; gap:18px; font:22px Georgia,serif; }
+    .dish p { color:#625c52; line-height:1.6; margin:8px 0 0; }
+    .contact { background:#e9e1d4; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:28px; }
+    .contact a { color:var(--ink); }
+    footer { padding:25px 7%; font-size:13px; color:#625c52; }
+    @media(max-width:720px) { header { align-items:flex-start; gap:18px; flex-direction:column; } nav { gap:16px; flex-wrap:wrap; } .hero { grid-template-columns:1fr; padding:48px 7%; } .hero-photo { min-height:340px; } section { padding:55px 7%; } .menu-grid,.contact-grid { grid-template-columns:1fr; } h2 { font-size:34px; } }
+  </style>
+</head>
+<body>
+  <div class="demo">PROJEKT ĆWICZENIOWY — nie jest oficjalną stroną restauracji</div>
+  <header>
+    <div class="brand">Trattoria Pergamin</div>
+    <nav><a href="#menu">Menu</a><a href="#o-nas">O restauracji</a><a href="#kontakt">Kontakt</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="o-nas">
+      <div>
+        <div class="eyebrow">Pizza &amp; pasta · Kraków</div>
+        <h1>Włoski smak, dobry czas.</h1>
+        <p>Ćwiczeniowy projekt strony dla Trattoria Pergamin – Nullo. Poniżej znajdziesz przykładowe pozycje menu oraz dane kontaktowe opublikowane przez restaurację. Przed użyciem strony przez restaurację wszystkie informacje trzeba z nią potwierdzić.</p>
+        <div class="actions"><a class="btn" href="#menu">Zobacz menu</a><a class="btn alt" href="tel:+48123417932">Zadzwoń: 12 341 79 32</a></div>
+      </div>
+      <div class="hero-photo">Smaki, do których chce się wracać</div>
+    </section>
+    <section id="menu">
+      <div class="section-title"><div class="eyebrow">Oferta może się zmieniać</div><h2>Menu</h2><p class="section-intro">Poniżej zebrano nazwy i ceny pozycji z menu online Trattoria Pergamin – Nullo. Aktualność i dostępność sprawdź w <a href="https://trattoriapergaminnullo.pl/menu/" target="_blank" rel="noreferrer">oficjalnym menu restauracji ↗</a>.</p></div>
+      <div class="menu-category"><h3>Śniadania</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Granola</span><span>34 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tost z gravlaxem</span><span>44 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Bowl z gravlaxem</span><span>40 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Szakszuka</span><span>32 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Angielskie</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Grzanka z salsicią</span><span>39 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Koktajl bomba witaminowa 300 ml</span><span>21 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Przystawki</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Antipasti Pergamin (dla 2 osób)</span><span>79 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Krewetki Black Tiger duszone na maśle</span><span>46 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Carpaccio wołowe</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Bruschetta</span><span>28 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Siekany tatar wołowy</span><span>59 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Zupy i dodatki</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Krem z pomidorów</span><span>24 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Zupa rybna z owocami morza</span><span>39 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Minestrone</span><span>24 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Koszyk pieczywa</span><span>10 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Grissini</span><span>8 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Dania główne</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Filet z kurczaka</span><span>48 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Filet z kaczki</span><span>66 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Stek z polędwicy wołowej</span><span>139 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tagliata wołowa</span><span>139 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Saltimbocca</span><span>89 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Stek z miecznika</span><span>119 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Sałatki</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Sałatka z kozim serem</span><span>56 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Sałatka z kurczakiem wędzonym</span><span>46 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Sałatka z krewetkami</span><span>52 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Risotto, ravioli i gnocchi</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Ravioli z sarniną</span><span>46 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Ravioli ze szpinakiem i ricottą</span><span>44 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Gnocchi serowe</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Gnocchi z kurczakiem</span><span>44 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Risotto wegetariańskie</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Risotto z cielęciną</span><span>49 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Cassarecci z cukinią</span><span>39 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Makarony</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Fregola z owocami morza</span><span>84 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Pappardelle z polędwicą wołową</span><span>60 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Lasagne Bolognese</span><span>52 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Spaghetti Carbonara</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Spaghetti Bolognese</span><span>45 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tagliatelle genovese z burratą</span><span>46 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tagliatelle nero z krewetkami</span><span>60 zł</span></div></article>
+      </div></div>
+      <div class="menu-category"><h3>Pizza</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Margherita</span><span>34 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Capricciosa</span><span>39 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Peperoni</span><span>41 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Quattro formaggi</span><span>48 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Parma</span><span>58 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Romana</span><span>48 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Z boczniakiem</span><span>42 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Arancia</span><span>53 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Caprese</span><span>46 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Vulcano</span><span>45 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Calzone con prosciutto cotto</span><span>41 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Calzone con salame</span><span>43 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Focaccia</span><span>19 zł</span></div></article>
+      </div><p class="section-intro">Pizze: 32 cm. Szczegóły składników i dodatków w oficjalnym menu.</p></div>
+      <div class="menu-category"><h3>Desery</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Semifreddo migdałowo-pistacjowe</span><span>32 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Panna cotta</span><span>26 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tiramisu</span><span>32 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Tarta czekoladowa</span><span>32 zł</span></div></article>
+      </div></div>
+      <p><a href="https://trattoriapergaminnullo.pl/menu/" target="_blank" rel="noreferrer">Zobacz pełne opisy dań na oficjalnej stronie restauracji ↗</a></p>
+    </section>
+    <section class="contact" id="kontakt">
+      <div class="eyebrow">Odwiedź nas</div><h2>Trattoria Pergamin – Nullo</h2>
+      <div class="contact-grid">
+        <div><h3>Adres</h3><p>ul. Pułkownika Francesco Nullo 42/U3<br>31-543 Kraków</p><p><a href="https://maps.google.com/?q=Pu%C5%82kownika+Francesco+Nullo+42%2FU3+Krak%C3%B3w" target="_blank" rel="noreferrer">Otwórz mapę ↗</a></p></div>
+        <div><h3>Kontakt i godziny</h3><p>Telefon: <a href="tel:+48123417932">+48 12 341 79 32</a><br>E-mail: <a href="mailto:restauracja@trattoriapergaminnullo.pl">restauracja@trattoriapergaminnullo.pl</a></p><p>Niedz.–pon.: 12:00–21:00<br>Wt.–sob.: 12:00–22:00</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>Projekt do nauki tworzenia stron. Dane i przykładowe ceny sprawdzone na stronie restauracji 15.10.2026. Zdjęcie: Unsplash.</footer>
+</body>
+</html>
+
+
