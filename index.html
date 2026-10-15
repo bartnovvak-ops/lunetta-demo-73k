@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lunetta — fikcyjna włoska restauracja. Projekt demonstracyjny strony internetowej." />
+  <title>Lunetta — Trattoria i Pizza | LunettaDemo-73K</title>
+  <style>
+    :root { --cream:#f5f0e7; --ink:#29251f; --olive:#5e6548; --rust:#a64e32; --line:#d8cdbd; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial,sans-serif; }
+    .demo { padding:10px 18px; text-align:center; background:#29251f; color:white; font-size:13px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:22px 7%; border-bottom:1px solid var(--line); }
+    .brand { font:bold 25px Georgia,serif; } nav { display:flex; gap:24px; } nav a { color:var(--ink); text-decoration:none; font-size:14px; }
+    .hero { display:grid; grid-template-columns:1fr 1fr; min-height:570px; align-items:center; gap:48px; padding:65px 7%; }
+    .eyebrow { color:var(--rust); text-transform:uppercase; letter-spacing:3px; font-size:12px; }
+    h1,h2,h3 { font-family:Georgia,serif; font-weight:normal; } h1 { font-size:clamp(48px,6vw,76px); line-height:1; margin:18px 0; }
+    .hero p,.intro { color:#625c52; line-height:1.8; max-width:480px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:25px; }
+    .btn { display:inline-block; background:var(--olive); color:white; padding:14px 20px; text-decoration:none; } .btn.alt { background:transparent; color:var(--ink); border:1px solid var(--ink); }
+    .photo { min-height:400px; background:linear-gradient(0deg,#211b18aa,transparent 55%),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85') center/cover; display:flex; align-items:end; padding:24px; color:white; font:22px Georgia,serif; }
+    section { padding:70px 7%; } h2 { font-size:42px; margin:12px 0; }
+    .menu-category { margin-top:42px; } .menu-category h3 { font-size:30px; border-bottom:1px solid var(--line); padding-bottom:12px; }
+    .menu-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:0 28px; }
+    .dish { border-bottom:1px solid var(--line); padding:17px 0; } .dish-top { display:flex; justify-content:space-between; gap:16px; font:19px Georgia,serif; }
+    .dish p { color:#625c52; line-height:1.55; margin:8px 0 0; font-size:14px; }
+    .contact { background:#e9e1d4; } .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:25px; }
+    .contact a { color:var(--ink); } footer { padding:25px 7%; color:#625c52; font-size:13px; }
+    @media(max-width:720px) { header { align-items:flex-start; gap:18px; flex-direction:column; } nav { gap:16px; flex-wrap:wrap; } .hero { grid-template-columns:1fr; padding:48px 7%; } .photo { min-height:320px; } section { padding:52px 7%; } .menu-grid,.contact-grid { grid-template-columns:1fr; } h2 { font-size:34px; } }
+  </style>
+</head>
+<body>
+  <div class="demo">FIKCYJNA RESTAURACJA — PROJEKT DEMONSTRACYJNY, NIE PRAWDZIWY LOKAL</div>
+  <header><div class="brand">Lunetta</div><nav><a href="#menu">Menu</a><a href="#onas">O nas</a><a href="#kontakt">Kontakt</a></nav></header>
+  <main>
+    <section class="hero" id="onas">
+      <div><div class="eyebrow">Trattoria · pizza · pasta</div><h1>Włoski smak, dobry czas.</h1>
+        <p>Witaj w Lunetcie — wymyślonej trattorii stworzonej na potrzeby nauki robienia stron. Zobacz przykładowe menu, a potem przewiń w dół, by znaleźć dane kontaktowe do tej fikcyjnej restauracji.</p>
+        <div class="actions"><a class="btn" href="#menu">Zobacz menu</a><a class="btn alt" href="#kontakt">Kontakt</a></div>
+      </div><div class="photo">Lunetta · smak włoskiego wieczoru</div>
+    </section>
+    <section id="menu"><div class="eyebrow">Nasza propozycja</div><h2>Menu Lunetty</h2><p class="intro">Wymyślone dania i przykładowe ceny — projekt ćwiczeniowy.</p>
+      <div class="menu-category"><h3>Przystawki</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Bruschetta al pomodoro</span><span>24 zł</span></div><p>Grzanki, pomidory, bazylia i oliwa.</p></article>
+        <article class="dish"><div class="dish-top"><span>Arancini di casa</span><span>29 zł</span></div><p>Chrupiące kuleczki ryżowe z sosem pomidorowym.</p></article>
+        <article class="dish"><div class="dish-top"><span>Caprese della Luna</span><span>32 zł</span></div><p>Pomidory, mozzarella, bazylia i pesto.</p></article>
+        <article class="dish"><div class="dish-top"><span>Focaccia al rosmarino</span><span>18 zł</span></div><p>Wypiekane pieczywo z rozmarynem i oliwą.</p></article>
+      </div></div>
+      <div class="menu-category"><h3>Makarony</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Spaghetti al pomodoro</span><span>36 zł</span></div><p>Spaghetti z sosem pomidorowym i świeżą bazylią.</p></article>
+        <article class="dish"><div class="dish-top"><span>Tagliatelle ai funghi</span><span>42 zł</span></div><p>Makaron wstążki z leśnymi grzybami i parmezanem.</p></article>
+        <article class="dish"><div class="dish-top"><span>Penne quattro formaggi</span><span>41 zł</span></div><p>Penne w kremowym sosie z czterech serów.</p></article>
+        <article class="dish"><div class="dish-top"><span>Ravioli ricotta e spinaci</span><span>45 zł</span></div><p>Ravioli z ricottą i szpinakiem, podane z masłem szałwiowym.</p></article>
+        <article class="dish"><div class="dish-top"><span>Lasagna della nonna</span><span>46 zł</span></div><p>Zapiekana lasagne z sosem pomidorowym i beszamelem.</p></article>
+        <article class="dish"><div class="dish-top"><span>Gnocchi al pesto</span><span>40 zł</span></div><p>Miękkie gnocchi z pesto bazyliowym.</p></article>
+      </div></div>
+      <div class="menu-category"><h3>Pizza · 32 cm</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Margherita</span><span>34 zł</span></div><p>Sos pomidorowy, mozzarella, bazylia.</p></article>
+        <article class="dish"><div class="dish-top"><span>Funghi</span><span>38 zł</span></div><p>Sos pomidorowy, mozzarella, pieczarki.</p></article>
+        <article class="dish"><div class="dish-top"><span>Piccante</span><span>41 zł</span></div><p>Sos pomidorowy, mozzarella, pikantne salami.</p></article>
+        <article class="dish"><div class="dish-top"><span>Quattro formaggi</span><span>46 zł</span></div><p>Mozzarella, gorgonzola, pecorino, parmezan.</p></article>
+        <article class="dish"><div class="dish-top"><span>Ortolana</span><span>42 zł</span></div><p>Grillowane warzywa, mozzarella i zioła.</p></article>
+        <article class="dish"><div class="dish-top"><span>Prosciutto e rucola</span><span>48 zł</span></div><p>Szynka, rukola, pomidorki i parmezan.</p></article>
+      </div></div>
+      <div class="menu-category"><h3>Desery</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Tiramisu</span><span>26 zł</span></div><p>Deser kawowy z mascarpone.</p></article>
+        <article class="dish"><div class="dish-top"><span>Panna cotta</span><span>23 zł</span></div><p>Waniliowy deser ze słodkim sosem owocowym.</p></article>
+        <article class="dish"><div class="dish-top"><span>Cannoli siciliani</span><span>24 zł</span></div><p>Chrupiące rurki z kremem ricotta.</p></article>
+        <article class="dish"><div class="dish-top"><span>Gelato del giorno</span><span>18 zł</span></div><p>Dwie gałki lodów dnia.</p></article>
+      </div></div>
+      <div class="menu-category"><h3>Napoje</h3><div class="menu-grid">
+        <article class="dish"><div class="dish-top"><span>Lemoniada domowa</span><span>16 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Woda gazowana / niegazowana</span><span>9 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Espresso</span><span>10 zł</span></div></article>
+        <article class="dish"><div class="dish-top"><span>Cappuccino</span><span>15 zł</span></div></article>
+      </div></div>
+    </section>
+    <section class="contact" id="kontakt"><div class="eyebrow">Projekt demo</div><h2>Skontaktuj się z Lunettą</h2>
+      <div class="contact-grid"><div><h3>Adres</h3><p>Restauracja fikcyjna — brak prawdziwego adresu.</p></div>
+      <div><h3>Telefon i e-mail</h3><p>Telefon: <a href="tel:+48000000000">+48 000 000 000</a><br>E-mail: <a href="mailto:ciao@lunetta.example">ciao@lunetta.example</a></p><p>To dane przykładowe i nie działają.</p></div></div>
+    </section>
+  </main>
+  <footer>Fikcyjny projekt edukacyjny · LunettaDemo-73K · Nie reprezentuje prawdziwej restauracji</footer>
+</body>
+</html>
